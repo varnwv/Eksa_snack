@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksasnack</title>
+    <style>
+        @keyframes fade-in {
+    0% {
+        opacity: 0; /* Mulai dengan transparan */
+    }
+    100% {
+        opacity: 1; /* Menjadi terlihat sepenuhnya */
+    }
+}
+        body {
+            animation: fade-in 350ms;
+            margin: 0; /* Mengatur margin body menjadi 0 */
+            padding: 0; /* Mengatur padding body menjadi 0 */
+            font-family: Arial, sans-serif; /* Mengatur font */
+            background-color: #ffae00; /* Warna latar belakang halaman */
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+            flex-direction: column; /* Mengatur arah flexbox */
+            align-items: center; /* Mengatur item di tengah */
+        }
+
+        .header {
+            background-color: white; /* Warna latar belakang header */
+            width: 100%; /* Lebar penuh */
+            padding: 20px 0; /* Padding vertikal */
+            text-align: center; /* Mengatur teks di tengah */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+        }
+
+        .header h1 {
+            font-size: 36px; /* Ukuran font untuk judul besar */
+            color: #333; /* Warna teks */
+            margin: 0; /* Menghapus margin */
+        }
+
+        .read-more {
+            background-color: white; /* Warna latar belakang section */
+            padding: 20px; /* Padding di sekitar konten */
+            text-align: left; /* Mengatur teks ke kiri */
+            border-radius: 8px; /* Sudut melengkung */
+            margin: 20px; /* Margin atas dan bawah */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+            width: 90%; /* Lebar section */
+            max-width: 800px; /* Lebar maksimum section */
+        }
+
+        .read-more h2 {
+            font-size: 28px; /* Ukuran font untuk judul */
+            margin-bottom: 15px; /* Jarak bawah dari judul */
+            color: #333; /* Warna judul */
+        }
+
+        .read-more p {
+            font-size: 18px; /* Ukuran font untuk paragraf */
+            margin-bottom: 15px; /* Jarak bawah dari paragraf */
+            color: #333333; /* Warna teks paragraf */
+        }
+
+        .read-more h3 {
+            color: #333; /* Warna untuk sub-judul */
+            margin-top: 20px; /* Jarak atas dari sub-judul */
+        }
+
+        .btn-read-more {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: inline-block; /* Agar tombol memiliki margin otomatis */
+            padding: 12px 25px; /* Padding dalam tombol */
+            background-color: #ffae00; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            text-decoration: none; /* Menghapus garis bawah dari link */
+            border-radius: 5px; /* Sudut melengkung tombol */
+            transition: background-color 0.3s; /* Efek transisi saat hover */
+            margin-top: 15px; /* Jarak atas untuk tombol */
+            transition: 350ms ease-in-out;
+        }
+
+        .btn-read-more:hover {
+            background-color: white;
+            color: #ffae00; /* Warna latar belakang saat hover */
+        }
+
+        ul {
+            list-style-type: none; /* Menghapus bullet dari list */
+            padding: 0; /* Menghapus padding dari list */
+            margin: 15px 0; /* Jarak atas dan bawah untuk list */
+        }
+
+        li {
+            background-color: #e9ecef; /* Warna latar belakang item list */
+            padding: 10px; /* Padding dalam item list */
+            border-radius: 5px; /* Sudut melengkung item list */
+            margin-bottom: 10px; /* Jarak bawah dari item list */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>EksaSnack</h1>
+</div>
+
+<section class="read-more">
+    <h2>About Us</h2>
+    <p>Selamat datang di Eksasnack!</p>
+    <p>Kami adalah penggemar camilan yang percaya bahwa setiap momen dalam hidup pantas disertai dengan kelezatan. Di Eksasnack, kami menawarkan berbagai pilihan snack yang lezat dan berkualitas, mulai dari camilan renyah hingga manis yang menggoda.</p>
+    
+    <h3>Visi Kami:</h3>
+    <p>Menyediakan camilan berkualitas tinggi yang dapat dinikmati oleh semua orang, di mana saja dan kapan saja. Kami ingin menghadirkan kebahagiaan dalam setiap gigitan.</p>
+    
+    <h3>Misi Kami:</h3>
+    <ul>
+        <li><strong>Kualitas Terbaik:</strong> Kami memilih bahan-bahan berkualitas untuk setiap produk kami.</li>
+        <li><strong>Inovasi Rasa:</strong> Kami terus berinovasi dengan menciptakan berbagai varian rasa baru yang unik dan menggugah selera.</li>
+        <li><strong>Pengalaman Pelanggan:</strong> Kami berkomitmen untuk memberikan pengalaman berbelanja yang menyenangkan bagi setiap pelanggan.</li>
+    </ul>
+
+    <h3>Kenapa Memilih Kami?</h3>
+    <ul>
+        <li><strong>Ragam Pilihan:</strong> Kami menawarkan berbagai jenis camilan, cocok untuk semua selera.</li>
+        <li><strong>Pengemasan Menarik:</strong> Setiap produk kami dikemas dengan rapi dan menarik, siap untuk dinikmati.</li>
+        <li><strong>Pelayanan Ramah:</strong> Tim kami selalu siap membantu dengan senyuman untuk memastikan kepuasan pelanggan.</li>
+    </ul>
+
+    <p>Mari bergabung dengan kami dalam perjalanan menikmati snack yang menggugah selera. Temukan camilan favoritmu di Eksasnack dan rasakan kelezatannya hari ini!</p>
+    <a href="index.html" class="btn-read-more">Kembali</a>
+</section>
+
+</body>
+</html>
